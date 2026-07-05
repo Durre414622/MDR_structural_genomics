@@ -3,7 +3,7 @@
 [![PDB 5X1X](https://img.shields.io/badge/PDB-5X1X-blue)](https://doi.org/10.2210/pdb5X1X/pdb)
 ![Python](https://img.shields.io/badge/Python-3.8+-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Last Commit](https://img.shields.io/github/last-commit/durre414622/mdr-structural-genomics)
+![Last Commit](https://img.shields.io/github/last-commit/durre414622/MDR_structural_biology)
 
 This repository contains Python scripts for the **structural characterization of stress response proteins** from multidrug-resistant (MDR) bacteria, including:
 
@@ -29,8 +29,8 @@ The centerpiece is the **NMR structure of Nudix hydrolase** from MRSA252, deposi
 
 ## What This Repository Contains
 
-- `structure_validation.py` — Ramachandran plot, RMSD, and secondary structure analysis for PDB 5X1X
-- `chemical_shift_analysis.py` — Analysis of chemical shift perturbations from ligand binding (metal ions and nucleotides)
+- `src/structure_validation.py` — Ramachandran plot, RMSD, and secondary structure analysis for PDB 5X1X
+- `src/chemical_shift_analysis.py` — Analysis of chemical shift perturbations from ligand binding (metal ions and nucleotides)
 - `data/` — PDB files, chemical shift assignments, and peak lists
 - `results/figures/` — Generated validation plots and interaction heatmaps
 
@@ -49,37 +49,46 @@ The centerpiece is the **NMR structure of Nudix hydrolase** from MRSA252, deposi
 
 ```bash
 # Clone the repository
-git clone https://github.com/durre414622/mdr-structural-genomics.git
-cd mdr-structural-genomics
+git clone https://github.com/durre414622/MDR_structural_biology.git
+cd MDR_structural_biology
 
 # Install dependencies
 pip install biopython matplotlib numpy
 
 # Run structure validation
-python structure_validation.py
+python src/structure_validation.py
 ```
 
 ---
 
-## Source Data
+## Publications & Data Depositions
 
-This work is based on the PhD thesis:
-> *"Structural and Functional Studies on Proteins and Peptides Isolated from Multidrug-Resistance (MDR) Bacteria by Using Multi-Dimensional NMR and Bioassay Techniques"*
-> University of Karachi, 2018.
+### Published Papers
+
+**Durr-E-Shahwar S**, Atia-Tul-Wahab, Choudhary MI, Jabeen A. (2019).  
+Cloning, purification, structural, and functional characterization of methicillin-resistant *Staphylococcus aureus* (MRSA252) RsbV protein.  
+*International Journal of Biological Macromolecules*, 134:962-966.
+
+### Protein Data Bank (PDB) Depositions
+
+| PDB ID | Protein | Organism | Year | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| [5X1X](https://doi.org/10.2210/pdb5X1X/pdb) | Nudix hydrolase (MutT) | *S. aureus* MRSA252 | 2017 | Deposited (manuscript in preparation) |
+
+### PhD Thesis
+
+**Syeda DE-S.** (2018). Structural and Functional Studies on Proteins and Peptides Isolated from Multidrug-Resistance (MDR) Bacteria by Using Multi-Dimensional NMR and Bioassay Techniques.  
+*PhD Thesis*, University of Karachi.
 
 ---
 
-## Publications
-
-Durr-E-Shahwar S, Atia-Tul-Wahab, Choudhary MI, Jabeen A. (2019).  
-**Cloning, purification, structural, and functional characterization of methicillin-resistant *Staphylococcus aureus* (MRSA252) RsbV protein.**  
-*International Journal of Biological Macromolecules*, 134:962-966.
+**Note:** The NMR structure of Nudix hydrolase (PDB 5X1X) was solved during my PhD. The manuscript describing this structure is currently in preparation.
 
 ---
 
 ## Author
 
-**Dr. Durr-e-Shahwar**  
+**Dr. Durr-e-Shahwar Syeda**  
 📧 sdurreshahwar@gmail.com  
 🔗 [Google Scholar](https://scholar.google.com/citations?user=yBeEPWQAAAAJ&hl=en)  
 💻 [GitHub](https://github.com/durre414622)
